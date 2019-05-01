@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IMC</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="visual.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="conteudo">
+        <h1>Índice de Massa Corporal</h1>
+        <br>
+
+        <div class="inputs">
+        <div class="input-group input-group-lg">
+            <input type="text" id="v1" class="form-control" placeholder="Peso" aria-describedby="sizing-addon1">
+        </div>
+
+        <div class="input-group input-group-lg">
+            <input type="text" id="v2" class="form-control" placeholder="Altura" aria-describedby="sizing-addon1">
+        </div>
+        </div>
+        <br>
+
+        <div class="botao">
+            <button type="button" class="btn btn-default" onclick="imc()">calcular</button>
+        </div>
+
+        <br>
+
+        <div class="alerta">
+            <h2><span class="label label-success" id="bom"></span></h2>
+            <h2><span class="label label-warning" id="medio"></span></h2>
+            <h2><span class="label label-danger" id="grave"></span></h2>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="func.js"></script>
+  </body>
+</html>
